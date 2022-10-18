@@ -1,11 +1,14 @@
 # IEEE Template
 
 This template use markdown, so you can write all your paper content using markdown syntax.
+You can find an example about how to use markdown for this template in `src/01.md`.
 
 ## Dependencies
 
 - make
-- pandoc
+- pandoc 
+- pandoc-crossref 
+- citeproc
 
 ## How to use it 
 
