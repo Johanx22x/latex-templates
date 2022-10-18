@@ -5,7 +5,7 @@ OUTPUT = build
 FLAGS = --bibliography=lib/bibliography.bib \
 		--from=markdown \
 		--to=latex \
-		--template=lib/template.latex \
+		--template=lib/template.tex \
 		--csl=lib/bibliography.csl \
 		--filter=pandoc-crossref \
 		--citeproc \
@@ -15,7 +15,7 @@ FLAGS = --bibliography=lib/bibliography.bib \
 
 all: pdf
 
---template=lib/template.latex
+--template=lib/template.tex
 
 pdf:
 	pandoc -o $(OUTPUT)/paper.pdf $(FLAGS) $(FILES)
