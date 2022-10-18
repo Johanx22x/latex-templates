@@ -1,0 +1,21 @@
+---
+title: 'Paper title'
+author:
+  - name: Author Name
+    affiliation: Affiliation
+    location: Location
+    email: email@email.com
+keywords:
+  - keywords
+numbersections: yes
+documentclass: IEEEconf
+lang: en
+babel-lang: english
+abstract: |
+  Insert here the paper abstract `metadata.yaml`.
+header-includes: |
+  \usepackage{booktabs}
+
+...
+
+---
