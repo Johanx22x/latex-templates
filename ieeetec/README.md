@@ -4,7 +4,7 @@ Esta plantilla se encuentra personalizada para ser usada en reportes e investiga
 del Instituto Tecnológico de Costa Rica, sin embargo, puede modificarse para otros 
 usos.
 
-Plantilla basada en la originalmente creada por MILLER ALEXANDER QUIROGA CAMPOS en [Overleaf](https://www.overleaf.com).
+Plantilla basada en la originalmente creada por MILLER ALEXANDER QUIROGA CAMPOS en [Overleaf](https://www.overleaf.com/latex/templates/template-practica-de-laboratorio-unicafam/bthmcszfjzxr).
 
 ## Dependencias
 
