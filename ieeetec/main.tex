@@ -1,0 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% AUTOR DE LA PLANTIILLA %%%%%%%%%%%%%
+%%%%%%%%% MILLER ALEXANDER QUIROGA CAMPOS %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[journal]{./lib/IEEEtran}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%  LIBRERIAS PERSONALIZADAS  %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./lib/preamble.tex}
+\input{./lib/header.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%  INICIO DEL DOCUMENTO  %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%  INFORMACIÓN DEL ARTÍCULO  %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./src/title.tex}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Agrega aqui el contenido del documento %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./src/abstract.tex}
+\input{./src/01.tex}
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Agrega aqui las referencias %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./lib/bibliography.tex}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% FIN DEL DOCUMENTO %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

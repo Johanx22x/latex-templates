@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PRIMERA SECCIÓN DEL DOCUMENTO %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introducción}
+\IEEEPARstart{E}{sta} sección puede constar de cuatro párrafos. Un primer párrafo donde se realiza el planteamiento del problema demostrando su relevancia. Un segundo párrafo presentando, comentando y comparando algunas de las soluciones propuestas para la solución de este problema o problemas similares (estado del arte). En el tercer párrafo se describe la solución propuesta al problema dejando clara la técnica o metodología a usar para dicho propósito. Finalmente, en el cuarto párrafo se presenta la distribución del documento sección por sección.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% SECCIONES DE MARCO TEÓRICO %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Concepto, metodología o técnica}	
+Esta sección debe tener como título el nombre del concepto, técnica o metodología que se considere relevante como parte del marco teórico del artículo.
+\subsection{Definición 1}
+Se pueden realizar diferentes definiciones dentro de una sección.
+
+\subsection{Definición 2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% CITAR BIBLIOGRAFIA %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Citar en formato IEEE}
+Para citar referencias bibliográficas se usa el comando cite. En \cite{nombre_para_citar} se muestran los campos que deben llenarse en una referencia, en \cite{kopka} se muestra un ejemplo, y en \cite{link} se muestra como citar un enlace. Preferiblemente citar libros y artículos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% SECCIONES DE DISEÑO Y DESARROLLO %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Solución propuesta}
+En esta sección se presenta la propuesta de diseño y como esta integra los conceptos definidos en las secciones anteriores para dar solución al problema planteado. Se deben presentar cálculos matemáticos o diagramas de flujo que lo demuestren. El nombre de la sección debe corresponder al nombre de la técnica o metodología usada o propuesta.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% ECUACIONES %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Ecuaciones en \LaTeX}
+Para escribir una ecuación:
+\begin{equation}\label{eqID}
+I_D=\frac{q N_A n_i^2}{N_D}\left(\frac{\alpha V_{GS}^2}{\mu_o}\right)^3
+\end{equation}
+
+\begin{equation}\label{Voeq} %label se usa para referenciar la ecuación al igual que con las gráficas.
+V_o \approx \int e^XdX
+\end{equation}
+Para mencionar una ecuación en el texto: en (\ref{eqID}) y (\ref{Voeq}) se observan las relaciones para $I_D$ y $V_o$ respectivamente.
+
+Se pueden reportar despejes, cálculos y procedimientos sin enumerarlos. Por ejemplo el siguiente cálculo:
+\begin{gather*}
+i=\frac{v}{R}\Longrightarrow i=\frac{5}{500}=10 mA
+\end{gather*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Simulaciones y pruebas}
+En esta sección se presentan los \emph{testbench} o pruebas realizadas para verificar que lo descrito y calculado en la sección anterior es correcto.
+
+\subsection{Figuras en \LaTeX}
+Para anexar una gráfica de datos se recomienda que sea en formato .eps o .ps lo cual puede hacerse usando MATLAB como se muestra en \cite{imagenes}. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%  ANEXAR UNA GRÁFICA  %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H] %[H] obliga a la figura a quedar en la misma posición en el texto final que en el archivo .tex, [t] coloca la figura en la parte superior de la página, [b] coloca la figura en la parte inferior de la página. 
+\centering  %Centra la figura
+\includegraphics[scale=0.23]{fig} %[se define tamaño de la figura]{nombre del archivo con la figura}
+\caption{Nombre descriptivo de la figura.} %Numera y titula la gráfica
+\label{lvdt4} %Permite referenciar la grafica en el texto EJ: en la gráfica \ref{lvdt4} se observa...
+\end{figure}
+También se pueden anexar subfiguras, modificar la posición y el tamaño. En el archivo de imagen no debe haber título. Si se desea anexar imágenes extraídas de otras fuentes (por ejemplo Internet), estas deben tener buena calidad y preferiblemente estar en formato png).
+
+Para referenciar o nombrar una figura en el texto: En la figura \ref{lvdt4} se presenta la característica $I_1$ contra $V_1$.
+
+Por otro lado, para crear esquemáticos de circuitos o diagramas de bloques o de flujo, puede usarse el software \emph{DIA} \cite{dia}, u otros programas que permitan salvar preferiblemente gráficos en formatos .eps o .ps. 
+\begin{figure}[H] %[H] obliga a la figura a quedar en la misma posición en el texto final que en el archivo .tex, [t] coloca la figura en la parte superior de la página, [b] coloca la figura en la parte inferior de la página. 
+\centering  %Centra la figura
+\includegraphics[scale=0.55]{LVDT4} %[se define tamaño de la figura]{nombre del archivo con la figura}
+\caption{Diagrama del integrado AD598.} %Numera y titula la gráfica
+\label{diafig} %Permite referenciar la grafica en el texto EJ: en la gráfica \ref{lvdt4} se observa...
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Implementación de la solución}
+En esta sección se presenta la materialización del dispositivo tanto en hardware como en software. Diseño de la PCB (\emph{Printed Circuit Board}) o diagrama de flujo de los \emph{scripts} creados.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% SECCIONES FINALES %%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resultados}
+En esta sección se describen los diferentes experimentos realizados al prototipo, junto a los resultados obtenidos representados mediante gráficas y tablas. Los resultados y tablas deben ser discutidos en el texto. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% TABLAS %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tablas en \LaTeX}
+Para definir una tabla:
+
+\begin{table}[H]
+\centering
+\caption{Nombre de la tabla}
+\label{table1}
+\begin{tabular}{c c c}\hline\hline
+\textbf{Símbolo} & \textbf{Nombre} & \textbf{Código Latex}\\ \hline
+$\alpha$ & alpha & \verb|\alpha| \\
+$\mu$ & mu & \verb|\mu|\\
+$\beta$ & beta & \verb|\beta|\\
+$\Omega$ & Omega & \verb|\Omega| \\\hline \hline
+\end{tabular}
+\end{table}
+Para mencionar la tabla en el documento: en la tabla \ref{table1} se muestran algunos ejemplos de código \LaTeX para obtener letras griegas.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% CONCLUSIONES %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusiones}
+En esta sección se presentan de forma clara y en tercera persona las conclusiones obtenidas respecto a la solución planteada y el desempeño del prototipo implementado.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,45 @@
+\IEEEoverridecommandlockouts
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% PRINCIPALES PAQUETES %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{nccmath}
+%\usepackage{anysize}
+\usepackage{subfigure}
+\usepackage{amsfonts,latexsym} % para tener disponibilidad de diversos simbolos
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{threeparttable}
+\usepackage{array,colortbl}
+\usepackage{ifpdf}
+\usepackage{rotating}
+\usepackage{cite}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{listings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CREAR Y REESCRIBIR ALGUNOS COMANDOS %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}  %% Se crea un nuevo tipo de columna llamada P.
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\newcommand{\ctt}{\centering\scriptsize\textbf} %%\ctt abrevia el comando \centering\scriptsize\textbf
+\newcommand{\dtt}{\scriptsize\textbf} %%\dtt abrevia el comando \scriptsize\textbf
+\renewcommand\IEEEkeywordsname{Palabras clave}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor} %% Con este comando se especifican como pueden seprarse las sílabas adecuadamente en caso una palabra quede en dos lineas diferentes de texto
+
+\graphicspath{ {figs/} }  %%Ruta donde se encuentran las imágenes, que esté vacio indica que las imagenes están dentro de la misma carpeta que contiene el archivo .tex

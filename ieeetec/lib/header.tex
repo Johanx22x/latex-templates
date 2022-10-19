@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ENCABEZADO DE LAS PÁGINAS TIPO UNICAFAM %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\MYhead}{\smash{\scriptsize
+\hfil\parbox[t][\height][t]{\textwidth}{\centering
+\begin{picture}(0,0) \put(-30,-13){\includegraphics[width=50mm]{logo.png}} \end{picture} \hspace{6.4cm}
+Instituto Tecnológico de Costa Rica \hspace{4cm} Versión 1.0\\
+\hspace{6.8cm} Escuela de Ingeniería en Computación \hspace{3.9cm} Periodo 2022-II\\
+\underline{\hspace{ \textwidth}}}\hfil\hbox{}}}
+\makeatletter
+% normal pages
+\def\ps@headings{%
+\def\@oddhead{\MYhead}%
+\def\@evenhead{\MYhead}}%
+% title page
+\def\ps@IEEEtitlepagestyle{%
+\def\@oddhead{\MYhead}%
+\def\@evenhead{\MYhead}}%
+\makeatother
+% make changes take effect
+\pagestyle{headings}
+% adjust as needed
+\addtolength{\footskip}{0\baselineskip}
+\addtolength{\textheight}{-1\baselineskip}
