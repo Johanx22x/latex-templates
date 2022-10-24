@@ -1,5 +1,5 @@
-author: Author Name
-title: Report Title
+author: Nombre Autor
+title: Titulo reporte
 lang: es
 
 documentclass: apa7tec
@@ -10,8 +10,8 @@ classoption:
 
 header-includes: |
   \affiliation{Instituto Tecnologico de Costa Rica}
-  \course{Course}
-  \professor{Teacher}
-  \duedate{YEAR}
+  \course{Curso}
+  \professor{Profesor}
+  \duedate{Año}
   \venue{Sede San Carlos}
-  \mes{MONTH}
+  \mes{Mes}
