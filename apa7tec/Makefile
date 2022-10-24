@@ -5,6 +5,7 @@ PANDOC = pandoc
 FLAGS = --bibliography=./lib/bibliography.bib \
 		--from=markdown \
 		--to=latex \
+		--filter=pandoc-crossref \
 		--citeproc \
 		--toc \
 		--highlight-style=tango \

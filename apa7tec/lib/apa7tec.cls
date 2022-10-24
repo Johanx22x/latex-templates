@@ -1254,7 +1254,7 @@
 
   \vspace*{3\baselineskip}
 
-      \includegraphics[width=0.8\textwidth]{../images/logo.png}
+      \includegraphics[width=0.8\textwidth]{./images/logo.png}
 
   \vspace*{\baselineskip}
 
