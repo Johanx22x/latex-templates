@@ -2,7 +2,7 @@ author: Nombre Autor
 title: Titulo reporte
 lang: es
 
-documentclass: apa7tec
+documentclass: ./lib/apa7tec.cls
 classoption:
   - stu
   - helv
