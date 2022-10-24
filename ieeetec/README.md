@@ -19,7 +19,7 @@ utilizando `\input{path}`, tal como se muestra dentro del archivo.
 - En `lib/` podrás encontrar archivos más especificos en cuanto a la estructura de la plantilla 
 y los paquetes que esta utiliza.
 - En `src/` se encuentran distribuidos los capitulos usados en la plantilla.
-- La bibliografía se encuentra en `lib/bibliography.tex`.
+- La bibliografía se encuentra al final del archivo `main.tex`.
 
 ## Como contribuir
 
