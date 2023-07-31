@@ -1,6 +1,4 @@
-# Exposicion Grupal Bases de Datos II
-
-This repository contains the documentation and resources for the group presentation on the topic of "Bases de Datos II" (Databases II). Below, you'll find the necessary commands to install MikTeX, Chocolatey, and how to compile the LaTeX document using make and clean the project.
+# APA 7 Template
 
 ## MikTeX Installation (Windows)
 - Download MikTeX: Visit the MikTeX website at https://miktex.org/download.
